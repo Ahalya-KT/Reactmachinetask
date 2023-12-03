@@ -13,8 +13,8 @@ function Chart() {
       // console.log(data);
 
       if (data) {
-        const pieDataArray = data.map((item) => item.label);
-        const labelsArray = data.map((item) => item.value);
+        const pieDataArray = data.map((item) => item.value);
+        const labelsArray = data.map((item) => item.label);
         setpieData(pieDataArray);
         setlabels(labelsArray);
         console.log(pieData);
@@ -44,9 +44,9 @@ function Chart() {
   };
 
   return (
-    <div className="bg-white w-80 shadow-lg rounded-lg p-8">
-      <div className=" h-56  flex justify-center items-center ">
-        <div className="w-full">
+    <div className="bg-white w-2/6 shadow-lg rounded-lg p-9">
+      <div className=" h-56  ">
+        <div className="w-full h-52 flex justify-center items-center">
           {pieData && (
             <Pie data={data} options={{ plugins: { legend: false } }} />
           )}

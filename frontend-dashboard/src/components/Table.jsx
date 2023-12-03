@@ -26,7 +26,10 @@ function Table() {
         </thead>
         <tbody>
           {tableData.map((items, index) => (
-            <tr className="table-row odd:bg-white even:bg-slate-50 ">
+            <tr
+              key={index}
+              className="table-row odd:bg-white even:bg-slate-50 "
+            >
               <td className="table-cell">{items.id}</td>
               <td className="table-cell">{items.name}</td>
               <td className="table-cell">{items.quantity}</td>
