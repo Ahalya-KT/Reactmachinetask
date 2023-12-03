@@ -6,7 +6,9 @@ function App() {
   return (
     <>
       <div className="flex">
-        <Sidebar />
+        <div className={`${!showNavbar && "hidden"} lg:block`}>
+          <Sidebar />
+        </div>
         <Home />
       </div>
     </>

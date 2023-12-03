@@ -1,10 +1,9 @@
 import React from "react";
-import img1 from "../assets/Assets/Circled Menu.png";
 
-function Sidebarbtn({ title }) {
+function Sidebarbtn({ title, img }) {
   return (
-    <div className="flex gap-3 px-5 items-center rounded-md">
-      <img src={img1} />
+    <div className="flex gap-2 px-7 w-36 items-center  rounded-lg bg-slate-600 py-3 hover:bg-white">
+      <img src={img} />
       <p className="text-white">{title}</p>
     </div>
   );
