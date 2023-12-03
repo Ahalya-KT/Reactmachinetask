@@ -14,8 +14,8 @@ function Table() {
   }, []);
 
   return (
-    <div className="w-5/6">
-      <table className=" w-full bg-white border shadow-lg border-gray-300">
+    <div className="w-5/6 ">
+      <table className=" w-full bg-white border  rounded-lg shadow-lg border-gray-300">
         <thead>
           <tr className="table-row">
             <th className="table-head">Id</th>

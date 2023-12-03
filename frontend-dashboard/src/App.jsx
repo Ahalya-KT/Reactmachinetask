@@ -5,13 +5,15 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
-    <div className="flex">
+    <div className="flex ">
       <Sidebar />
-      <BrowserRouter>
-        <Routes>
-          <Route element={<Home />} path="/" />
-        </Routes>
-      </BrowserRouter>
+      <div className="w-full ml-44">
+        <BrowserRouter>
+          <Routes>
+            <Route element={<Home />} path="/" />
+          </Routes>
+        </BrowserRouter>
+      </div>
     </div>
   );
 }

@@ -10,7 +10,7 @@ import helpicon from "../assets/Assets/Help.png";
 
 function Sidebar() {
   return (
-    <div className="bg-slate-700 w-44 h-screen flex flex-col justify-between ">
+    <div className="bg-slate-700 w-44 h-screen fixed flex flex-col justify-between ">
       <div>
         <div className="px-10 py-6">
           <img src={img} />

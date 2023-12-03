@@ -29,11 +29,14 @@ function Graph() {
         label: "Dataset 1",
         data: graphData,
         backgroundColor: "rgb(179, 255, 255)",
+        tension: 0.4,
+        pointRadius: 6,
+        pointBackgroundColor: "#66ccff",
       },
     ],
   };
   return (
-    <div className="bg-white w-4/6 p-3 shadow-lg ">
+    <div className="bg-white rounded-lg w-4/6 p-3 shadow-lg ">
       <div className="">
         {graphData && (
           <Line data={data} options={{ plugins: { legend: false } }} />
