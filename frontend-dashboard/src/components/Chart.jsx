@@ -52,12 +52,29 @@ function Chart() {
           )}
         </div>
       </div>
-      <div className="font-semibold">
-        <p> Category A</p>
-        <p>Category B</p>
-        <p>Category C</p>
-        <p>Category D</p>
-        <p>Category E</p>
+      <div className="font-semibold flex gap-2">
+        <div className="w-5 h-5 bg-emerald-300 rounded-full py-2 "></div>
+        <div>Category A</div>
+      </div>
+
+      <div className="font-semibold flex gap-2">
+        <div className="w-5 h-5 bg-green-500 rounded-full py-2 "></div>
+        <div>Category B</div>
+      </div>
+
+      <div className="font-semibold flex gap-2">
+        <div className="w-5 h-5 bg-green-400 rounded-full py-2 "></div>
+        <div>Category C</div>
+      </div>
+
+      <div className="font-semibold flex gap-2">
+        <div className="w-5 h-5 bg-emerald-600 rounded-full py-2 "></div>
+        <div>Category D</div>
+      </div>
+
+      <div className="font-semibold flex gap-2">
+        <div className="w-5 h-5 bg-green-300 rounded-full py-2 "></div>
+        <div>Category E</div>
       </div>
     </div>
   );

@@ -22,28 +22,23 @@ function Graph() {
     loadValue();
   }, []);
 
-  // const labels = [
-  //   "January",
-  //   "February",
-  //   "March",
-  //   "April",
-  //   "May",
-  //   "June",
-  //   "July",
-  // ];
-  const data = {
-    graghlabel,
+  let data = {
+    labels: graghlabel,
     datasets: [
       {
         label: "Dataset 1",
         data: graphData,
-        backgroundColor: "rgba(255, 99, 132)",
+        backgroundColor: "rgb(179, 255, 255)",
       },
     ],
   };
   return (
-    <div className="bg-white w-4/6 shadow-lg ">
-      <div className="">{graphData && <Line data={data} />}</div>
+    <div className="bg-white w-4/6 p-3 shadow-lg ">
+      <div className="">
+        {graphData && (
+          <Line data={data} options={{ plugins: { legend: false } }} />
+        )}
+      </div>
     </div>
   );
 }

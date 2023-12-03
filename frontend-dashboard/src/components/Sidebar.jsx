@@ -25,7 +25,7 @@ function Sidebar() {
         </div>
       </div>
 
-      <div className="flex items-center justify-center gap-2  py-2">
+      <div className="flex items-center justify-center bg-white gap-2  py-2">
         <p className=" text-lg ">Logout</p>
         <img src={img2} />
       </div>

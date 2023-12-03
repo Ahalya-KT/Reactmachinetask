@@ -15,11 +15,11 @@ function Home() {
       {/* navbar */}
       <Navbar toggleNavbar={toggleNavbar} />
       {/* graph */}
-      <div className="px-14 py-10 flex gap-6">
+      <div className="px-14 py-5 flex gap-6">
         <Graph />
         <Chart />
       </div>
-      <div className="flex px-14 py-10 gap-4">
+      <div className="flex px-10 py-4 gap-4">
         <Table />
         <Profile />
       </div>
