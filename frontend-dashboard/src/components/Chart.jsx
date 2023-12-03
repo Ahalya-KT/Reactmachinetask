@@ -44,7 +44,7 @@ function Chart() {
   };
 
   return (
-    <div className="bg-white w-2/6 shadow-lg rounded-lg p-9">
+    <div className="bg-white lg:w-2/6 w-full lg:mt-0 mt-2 shadow-lg rounded-lg p-9">
       <div className=" h-56  ">
         <div className="w-full h-52 flex justify-center items-center">
           {pieData && (

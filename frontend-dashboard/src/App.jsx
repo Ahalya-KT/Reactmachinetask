@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="flex ">
       <Sidebar />
-      <div className="w-full ml-44">
+      <div className="w-full lg:ml-44">
         <BrowserRouter>
           <Routes>
             <Route element={<Home />} path="/" />

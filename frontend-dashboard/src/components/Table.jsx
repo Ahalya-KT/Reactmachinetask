@@ -14,7 +14,7 @@ function Table() {
   }, []);
 
   return (
-    <div className="w-5/6 ">
+    <div className="lg:w-5/6 w-full ">
       <table className=" w-full bg-white border  rounded-lg shadow-lg border-gray-300">
         <thead>
           <tr className="table-row">

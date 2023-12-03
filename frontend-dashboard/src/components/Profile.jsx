@@ -6,12 +6,12 @@ import twittericon from "../assets/Assets/twitter.png";
 
 function Profile() {
   return (
-    <div className="w-1/6 bg-white shadow-lg">
-      <img src={profilepic} />
+    <div className="lg:w-1/6 lg:mt-0 mt-4 bg-white shadow-lg">
+      <img className="w-full" src={profilepic} />
 
-      <div className="px-16">
+      <div className=" flex flex-col items-center justify-center">
         <p className="font-semibold">John Deo</p>
-        <p className="text-slate-500 px-5">CEO</p>
+        <p className="text-slate-500">CEO</p>
 
         <div className="flex gap-2 py-4">
           <img src={facebookicon} />

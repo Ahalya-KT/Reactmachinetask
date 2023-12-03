@@ -36,12 +36,10 @@ function Graph() {
     ],
   };
   return (
-    <div className="bg-white rounded-lg w-4/6 p-3 shadow-lg ">
-      <div className="">
-        {graphData && (
-          <Line data={data} options={{ plugins: { legend: false } }} />
-        )}
-      </div>
+    <div className="bg-white rounded-lg lg:w-4/6 w-full p-3 shadow-lg ">
+      {graphData && (
+        <Line data={data} options={{ plugins: { legend: false } }} />
+      )}
     </div>
   );
 }
