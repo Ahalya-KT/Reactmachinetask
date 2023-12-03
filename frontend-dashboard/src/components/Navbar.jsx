@@ -3,7 +3,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 
 import User from "../components/User";
 
-function Navbar() {
+function Navbar({ toggleNavbar }) {
   return (
     <div className="flex justify-between items-center  py-3">
       <div className="flex gap-2  px-10">

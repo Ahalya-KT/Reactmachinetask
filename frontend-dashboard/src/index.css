@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.table-row {
+  @apply border-b;
+}
+
+.table-cell {
+  @apply p-3 border-r;
+}
+
+.table-head {
+  @apply p-3 text-left border-r;
+}
