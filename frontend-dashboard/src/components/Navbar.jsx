@@ -13,7 +13,7 @@ function Navbar({ toggleNavbar }) {
       </div>
 
       {/* user */}
-      <div className="lg:mr-8 ms-5">
+      <div className="lg:mr-8 mx-5">
         <User />
       </div>
     </div>
