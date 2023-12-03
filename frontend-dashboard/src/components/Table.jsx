@@ -6,7 +6,7 @@ function Table() {
   useEffect(() => {
     async function tableDetails() {
       await axios.get("http://localhost:3001/api/table").then((res) => {
-        console.log(res.data);
+        // console.log(res.data);
         settableData(res.data);
       });
     }
@@ -15,7 +15,7 @@ function Table() {
 
   return (
     <div className="w-5/6">
-      <table className=" w-full bg-white border border-gray-300">
+      <table className=" w-full bg-white border shadow-lg border-gray-300">
         <thead>
           <tr className="table-row">
             <th className="table-head">Id</th>
